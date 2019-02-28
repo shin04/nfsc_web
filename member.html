@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>名古屋大学フィギュアスケート部</title>
+    <meta charset="utf-8">
+    <meta name="Web page about Nagoya Univercty Figure Skating Club" content="">
+    <meta name="Kajiwara Daishin" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="member.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/vegas/vegas.min.css">
+    <script src="js/vegas/vegas.min.js"></script>
+    <script>
+      $(function(){
+         // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 400; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+         });
+      });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <div class="container clearfix">
+        <img src="" alt="" title="" class="logo">
+        <h1 class="title"><a href="index.html">名古屋大学フィギュアスケート部</a></h1>
+      </div>
+    </header>
+
+    <div class="cp_navi">
+      <div id="cp_sidenav" class="sidenav">
+      	<a href="activity.html" id="activity">活動</a>
+      	<a href="member.html" id="member">部員紹介</a>
+      	<a href="result.html" id="performance">大会結果</a>
+      	<a href="schedule.html" id="schedule">予定</a>
+        <a href="shinkan.html" id="shinkan">新歓</a>
+        <a href="blog.html" id="blog">ブログ</a>
+        <a href="contact.html" id="contact">コンタクト</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="cd-fixed-bg cd-bg-0">
+        <div class="bgc">
+          <h1>部員紹介</h1>
+        </div>
+      </div>
+
+      <div class="cd-scrolling-bg-0 cd-color-0">
+        <div class="cd-container">
+          <div class="member-index">
+            <p><a href="#fourth" class="button">４年生</a></p>
+            <p><a href="#third" class="button">３年生</a></p>
+            <p><a href="#second" class="button">２年生</a></p>
+            <p><a href="#first" class="button">１年生</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-bg-1" id="fourth">
+        <div class="bgc">
+          <h1>４年生</h1>
+        </div>
+      </div>
+
+      <div class="cd-scrolling-bg cd-color-1">
+        <div class="cd-container">
+          <div class="member">
+            <img src="img/hatsune.jpg" class="photo">
+            <h3>二宮初音</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>北前穂乃佳</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>山田隆博</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>三輪優里菜</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>林穂乃華</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>犬塚友絵</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>田村昌大</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-bg-2" id="third">
+        <div class="bgc">
+          <h1>３年生</h1>
+        </div>
+      </div>
+
+      <div class="cd-scrolling-bg cd-color-2">
+        <div class="cd-container">
+          <div class="member">
+            <img src="img/kajita.jpg" class="photo">
+            <h3>梶田智也</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>柴田優作</h3>
+          </div>
+          <div class="member">
+            <img src="img/yamada.jpg" class="photo">
+            <h3>山田雄貴</h3>
+          </div>
+          <div class="member">
+            <img src="img/eguchi.jpg" class="photo">
+            <h3>永口美祐</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>齋藤千佳</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>野内美邑</h3>
+          </div>
+          <div class="member">
+            <img src="img/takuto.jpg" class="photo">
+            <h3>ミットラグーン・パンチャート</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>水野彰人</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-bg-3" id="second">
+        <div class="bgc">
+          <h1>２年生</h1>
+        </div>
+      </div>
+
+      <div class="cd-scrolling-bg cd-color-3">
+        <div class="cd-container">
+          <div class="member">
+            <img src="img/matsunaga.jpg" class="photo">
+            <h3>松永菜央</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>阿部百合名</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>渡辺果奈</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="cd-fixed-bg cd-bg-4" id="first">
+        <div class="bgc">
+          <h1>１年生</h1>
+        </div>
+      </div>
+
+      <div class="cd-scrolling-bg cd-color-4">
+        <div class="cd-container">
+          <div class="member">
+            <img src="img/shibata.jpg" class="photo">
+            <h3>柴田優奈</h3>
+          </div>
+          <div class="member">
+            <img src="img/tokumaru.jpg" class="photo">
+            <h3>徳丸星奈</h3>
+          </div>
+          <div class="member">
+            <img src="img/enoki.jpg" class="photo">
+            <h3>榎麗奈</h3>
+          </div>
+          <div class="member">
+            <img src="img/oosaki.jpg" class="photo">
+            <h3>大崎嵩友</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>水野優壱</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>森藤しん</h3>
+          </div>
+          <div class="member">
+            <img src="img/fukatsu.jpg" class="photo">
+            <h3>深津美羽</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>羽多野美初</h3>
+          </div>
+          <div class="member">
+            <img src="img/tashiro.png" class="photo">
+            <h3>田代悠太郎</h3>
+          </div>
+          <div class="member">
+            <img src="img/sample.png" class="photo">
+            <h3>梶原大進</h3>
+          </div>
+          <div class="member">
+            <img src="img/mizushima.jpg" class="photo">
+            <h3>水島慎吾</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>

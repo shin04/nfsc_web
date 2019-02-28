@@ -1,0 +1,112 @@
+body {
+  background-image: url("img/11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-shinkan {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  top: 35vh;
+}
+
+.title-shinkan h1 {
+  position: relative;
+  font-size: 50px;
+}
+
+.shinkan-1 {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.shinkan-2 {
+  position: absolute;
+  top: 120vh;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.shinkan-3 {
+  position: absolute;
+  top: 140vh;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.shinkan-4 {
+  position: absolute;
+  top: 160vh;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.shinkan-5 {
+  position: absolute;
+  top: 180vh;
+  width: 100vw;
+  height: 75vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.shinkan-6 {
+  position: absolute;
+  top: 255vh;
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.shinkan-6 iframe {
+  margin-top: 15px;
+}
+
+.shinkan-7 {
+  position: absolute;
+  top: 345vh;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+table {
+  margin-left: 5%;
+  border-collapse: collapse;
+  width: 70vw;
+}
+
+th,td {
+    padding: 5px 10px;          /* 余白指定 */
+}
+
+th {
+    background-color: rgba(0,0,0,0.5);  /* 背景色指定 */
+    color: #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 10;                /* 重なり調整 */
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.7); /* 背景色指定 */
+    padding-left: 25px;         /* 余白指定 */
+}
+
+tr{
+    border-bottom: solid rgba(0, 0, 0, 0.3); /* 線指定 */
+}
