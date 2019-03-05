@@ -58,10 +58,9 @@
 .bgc {
   position: relative;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: rgba(255, 255, 255, 0.5);
 }
-
 header {
 	position: absolute;
 	z-index: 2;
@@ -105,83 +104,81 @@ a {
 .welcome h1 {
   float: right;
 }
-
+.introduction {
+	position: absolute;
+	top: 100vh;
+	width: 100vw;
+	background: rgba(255, 255, 255, 0.5);
+}
 .introduction-1 {
-  position: absolute;
-  top: 100vh;
-  width: 100vw;
-  height: 35vh;
-  background-color: rgba(255,255,255,0.7);
+	position: relative;
+	background-color: rgba(255,255,255,0.7);
+	width: 100vw;
+	padding-left: 10%;
 }
-
 .introduction-1 h1 {
-  float: left;
-  margin: 5%;
+	display: inline-block;
+	width: 35vw;
 }
-
 .introduction-1 p {
-  margin: 3%;
+	display: inline-block;
+	width: 50vw;
 }
 
 .introduction-2 {
-  position: absolute;
-  top: 135vh;
-  width: 100vw;
-  height: 35vh;
-  background-color: rgba(255,255,255,0.9);
+	position: relative;
+	display: flex;
+	background-color: rgba(255,255,255,0.9);
+	width: 100vw;
+	padding-left: 10%;
 }
 
 .introduction-2 h1 {
-  float: right;
-  margin: 5%;
+	display: inline-block;
+	width: 35VW;
+	order: 2;
 }
 
 .introduction-2 p {
-  margin: 5%;
+	display: inline-block;
+	width: 50vw;
+	order: 1;
 }
 
 .introduction-3 {
-  position: absolute;
-  top: 170vh;
-  width: 100vw;
-  height: 35vh;
-  background-color: rgba(255,255,255,0.7);
-  text-align: center;
+	position: relative;
+	background-color: rgba(255,255,255,0.7);
+	text-align: center;
+	padding: 5%;
 }
 
 .introduction-3 a {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  width: 30vw;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border-left: solid 4px rgba(60,179,113,1.0);
-  border-right: solid 4px rgba(60,179,113,1.0);
-  color: #ffffff;
-  background: rgba(0,0,0,0.5);
-  transition: .4s;
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	width: 40vw;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-left: solid 4px rgba(60,179,113,1.0);
+	border-right: solid 4px rgba(60,179,113,1.0);
+	color: #ffffff;
+	background: rgba(0,0,0,0.5);
+	transition: .4s;
 }
 
 .introduction-3 a:hover {
-  background: rgba(60,179,113,1.0);
-  color: #FFF;
+	background: rgba(60,179,113,1.0);
+	color: #FFF;
 }
 
 .sns {
-	position: absolute;
-  top: 205vh;
-	height: 80vh;
-	width: 100vw;
+	position: relative;
 	background: rgba(255, 255, 255, 0.5);
 }
 
 .sns .twitter-timeline {
 	margin: 5%;
 }
-
-twitter-timeline
-
 .video-wrap {
   position: relative;
 }
@@ -195,7 +192,6 @@ video {
   height: 100vh;
   z-index: -9999;
 }
-
 .about {
   position: absolute;
   top: 70vh;
@@ -252,9 +248,16 @@ video {
 
 /*スマホ用*/
 @media only screen and (max-device-width: 480px) {
+	header img {
+		display: none;
+	}
+	.welcome {
+		display: none;
+	}
   .cp_navi {
     z-index: 2;
-    position: relative;
+    position: absolute;
+		top: 25vh;
   	overflow: hidden;
   	width: 100%;
   	height:440px;
@@ -274,4 +277,25 @@ video {
   .cp_navi #cp_sidenav a:hover {
   	left: 10px;
   }
+	.introduction-1 h1 {
+		width: 80vw;
+	}
+	.introduction-1 p {
+		width: 80vw;
+	}
+	.introduction-2 {
+		display: block;
+	}
+	.introduction-2 h1 {
+		width: 80vw;
+	}
+	.introduction-2 p {
+		width: 80vw;
+	}
+	video {
+		display: none;
+	}
+	.about {
+		top: 100vh
+	}
 }
