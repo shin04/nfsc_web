@@ -298,4 +298,8 @@ video {
 	.about {
 		top: 100vh
 	}
+	.prepare {
+		position: absolute;
+		top: 90vh;
+	}
 }

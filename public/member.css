@@ -5,13 +5,12 @@ body, html, main, .bgc {
 
 .cd-fixed-bg {
   z-index: 1;
-    position: relative;
-    min-height: 100%;
-    margin-left: 30px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .cd-fixed-bg-0 {
   z-index: 1;
@@ -88,4 +87,10 @@ body, html, main, .bgc {
 .button:hover {
   background: rgba(60,179,113,1.0);
   color: #FFF;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .cd-fixed-bg.cd-bg-0 h1 {
+    display: none;
+  }
 }
