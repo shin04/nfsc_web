@@ -1,8 +1,8 @@
 body {
   background-image: url("img/11.jpg");
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 /*
 .title-shinkan {
@@ -156,6 +156,7 @@ table {
 
 .shinkan-6 iframe {
   margin-top: 15px;
+  width: 100vw;
 }
 
 .shinkan-7 {
