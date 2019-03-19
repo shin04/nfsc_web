@@ -40,8 +40,8 @@ body, html, main, .bgc {
 
 .cd-scrolling-bg {
   z-index: 1;
-    min-height: 100%;
-    margin-left: 30px;
+  min-height: 100%;
+  margin-left: 30px;
 }
 
 .cd-fixed-bg h1 {
@@ -93,30 +93,13 @@ body, html, main, .bgc {
   .cd-fixed-bg.cd-bg-0 h1 {
     display: none;
   }
-  .cd-fixed-bg::before {
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center center;
+  /*スマホ版はとりあえず背景固定しない*/
+  .cd-fixed-bg-0 {
+    background-attachment:scroll;
     background-size: cover;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
   }
-  .cd-fixed-bg-0::before {
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center center;
+  .cd-fixed-bg {
+    background-attachment:scroll;
     background-size: cover;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
   }
 }

@@ -195,23 +195,22 @@ tr{
 }
 
 @media only screen and (max-device-width: 480px) {
-  body::before {
-    content: "";
-    background: url(img/16.jpg) no-repeat center center;
+  body::before{
+    background: url("./img/16.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    content: "";
     z-index: -1;
   }
-
-  body {
-    background-image: url("img/16.jpg");
-  }
-
   .title-shinkan {
     position: absolute;
     text-align: center;
