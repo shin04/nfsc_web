@@ -14,6 +14,55 @@
     <script src="js/vegas/vegas.min.js"></script>
     <script>
       $(function(){
+        var target1 = $("#zero");
+        var targetPosOT1 = target1.offset().top;
+        var target2 = $("#fourth");
+        var targetPosOT2 = target2.offset().top;
+        var target3 = $("#third");
+        var targetPosOT3 = target3.offset().top;
+        var target4 = $("#second");
+        var targetPosOT4 = target4.offset().top;
+        var target5 = $("#first");
+        var targetPosOT5 = target5.offset().top;
+        var targetFactor = 0;
+        var windowH = $(window).height();
+        var scrollYStart1 = targetPosOT1 - windowH;
+        var scrollYStart2 = targetPosOT2 - windowH;
+        var scrollYStart3 = targetPosOT3 - windowH;
+        var scrollYStart4 = targetPosOT4 - windowH;
+        var scrollYStart5 = targetPosOT5 - windowH;
+        $(window).on('scroll',function(){
+          var scrollY = $(this).scrollTop();
+          if(scrollY > scrollYStart1){
+            target1.css('background-position-y', (scrollY - targetPosOT1) * targetFactor + 'px');
+          }else{
+            target1.css('background-position','center top');
+          }
+          if(scrollY > scrollYStart2){
+            target2.css('background-position-y', (scrollY - targetPosOT2) * targetFactor + 'px');
+          }else{
+            target2.css('background-position','center top');
+          }
+          if(scrollY > scrollYStart3){
+            target3.css('background-position-y', (scrollY - targetPosOT3) * targetFactor + 'px');
+          }else{
+            target3.css('background-position','center top');
+          }
+          if(scrollY > scrollYStart4){
+            target4.css('background-position-y', (scrollY - targetPosOT4) * targetFactor + 'px');
+          }else{
+            target4.css('background-position','center top');
+          }
+          if(scrollY > scrollYStart5){
+            target5.css('background-position-y', (scrollY - targetPosOT5) * targetFactor + 'px');
+          }else{
+            target5.css('background-position','center top');
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function(){
          // #で始まるアンカーをクリックした場合に処理
          $('a[href^=#]').click(function() {
             // スクロールの速度
