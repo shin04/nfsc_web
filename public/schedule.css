@@ -1,0 +1,53 @@
+body {
+  background-image: url("img/22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-schedule {
+  position: absolute;
+  text-align: center;
+  top: 35vh;
+  width: 100vw;
+}
+
+.title-schedule h1 {
+  position: relative;
+}
+
+.schedule {
+  position: relative;
+  text-align: center;
+  top: 100vh;
+  height: 80vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+table {
+  margin-left: 5%;
+  border-collapse: collapse;
+  width: 70vw;
+}
+
+th,td {
+    padding: 5px 10px;          /* 余白指定 */
+}
+
+th {
+    background-color: rgba(0,0,0,0.5);  /* 背景色指定 */
+    color: #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 10;                /* 重なり調整 */
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.7); /* 背景色指定 */
+    padding-left: 25px;         /* 余白指定 */
+}
+
+tr{
+    border-bottom: solid rgba(0, 0, 0, 0.3); /* 線指定 */
+}

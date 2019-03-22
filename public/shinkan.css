@@ -194,6 +194,25 @@ tr{
     border-bottom: solid rgba(0, 0, 0, 0.3); /* 線指定 */
 }
 
+.shinkan-7 a {
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	width: 40vw;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-left: solid 4px rgba(60,179,113,1.0);
+	border-right: solid 4px rgba(60,179,113,1.0);
+	color: #ffffff;
+	background: rgba(0,0,0,0.5);
+	transition: .4s;
+}
+
+.shinkan-7 a:hover {
+	background: rgba(60,179,113,1.0);
+	color: #FFF;
+}
+
 @media only screen and (max-device-width: 480px) {
   body::before{
     background: url("./img/16.jpg");
